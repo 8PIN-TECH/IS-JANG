@@ -20,7 +20,7 @@ def print_star(num):
     """
     입력받은 값에 대한 별을 출력합니다.
     :param num:
-    :return:
+    :return: null
     """
     for line in range(num):
         for _ in range(line):
