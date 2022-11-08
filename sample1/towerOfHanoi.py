@@ -10,7 +10,10 @@ def hanoi (n, tray1, tray2, tray3):
     :param tray3: 이동할 위치의 발판 tray3
     :return:
     """
-    if (1 < n < 100):
+    if (n == 1):
+        print(tray1, tray3)
+
+    elif (1 < n <= 100) :
         hanoi(n - 1, tray1, tray3, tray2)
         print(tray1, tray3)
         hanoi(n - 1, tray3, tray2, tray1)
