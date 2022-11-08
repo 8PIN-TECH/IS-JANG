@@ -16,9 +16,9 @@ def hanoi (n, tray1, tray2, tray3):
     elif (1 < n <= 100) :
         hanoi(n - 1, tray1, tray3, tray2)
         print(tray1, tray3)
-        hanoi(n - 1, tray3, tray2, tray1)
+        hanoi(n - 1, tray2, tray1, tray3)
 
 if __name__ == '__main__':
     n = int(input('숫자를 입력 하여 주세요.'))
-    print(n)
+    print(2**n - 1)
     hanoi(n, 1, 2, 3)
