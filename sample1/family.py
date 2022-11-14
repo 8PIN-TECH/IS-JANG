@@ -12,3 +12,4 @@ def input ():
 
 if __name__ == '__main__':
     input()
+    print("test")
